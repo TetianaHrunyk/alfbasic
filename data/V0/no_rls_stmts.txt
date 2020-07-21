@@ -1,0 +1,524 @@
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'draft';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'task';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'ready';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'delete';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'close';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'statistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'logistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'employees';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'salary';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells';
+
+? CREATE INDEX acta_index ON alfbasic(acta);
+
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'draft';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'task';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'ready';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'delete';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'close';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'statistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'logistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'employees';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'salary';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells';
+
+
+? CREATE INDEX stage_index ON alfbasic(stage);
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'draft';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'task';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'ready';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'delete';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'close';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'statistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'logistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'employees';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'salary';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells';
+
+
+? CREATE INDEX tenant_index ON alfbasic(tenant);
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'draft';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'task';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'ready';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'delete';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'close';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'statistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'logistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'employees';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'salary';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells';
+
+
+? CREATE INDEX casetype_index ON alfbasic(casetype);
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'draft';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'task';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'ready';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'delete';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE stage LIKE 'close';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'statistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'logistics';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'employees';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'salary';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells';
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells'; 
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells';

@@ -1,0 +1,74 @@
+? SET ROLE tfog_abells_u;
+
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? CREATE INDEX tenant_index ON alfbasic(tenant);
+? SET ROLE tfog_acoast_u;
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? CREATE INDEX acty_index ON alfbasic(acta);
+? CREATE INDEX stage_index ON alfbasic(stage);
+? SET ROLE tfog_acoast_u;
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? CREATE INDEX casetype_index ON alfbasic(casetype);
+? SET ROLE tfog_acoast_u;
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber);
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+SELECT file_oid FROM files INNER JOIN alfbasic ON (files.casenumber = alfbasic.casenumber) WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;

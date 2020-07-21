@@ -1,0 +1,171 @@
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE abells_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX acta_index ON alfbasic(acta);
+? SET ROLE abells_sdraft_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX stage_index ON alfbasic(stage);
+? SET ROLE abells_sdraft_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX tenant_index ON alfbasic(tenant);
+? SET ROLE abells_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX casetype_index ON alfbasic(casetype);
+? SET ROLE abells_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;

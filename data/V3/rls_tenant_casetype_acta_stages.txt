@@ -1,0 +1,169 @@
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? CREATE INDEX udim1_index ON alfbasic(udim1);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX udim2_index ON alfbasic(udim2);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX udim3_index ON alfbasic(udim3);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX acta_index ON alfbasic(acta);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX stage_index ON alfbasic(stage);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX tenant_index ON alfbasic(tenant);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
+? CREATE INDEX casetype_index ON alfbasic(casetype);
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table';
+explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
+
+
+? SET ROLE postgres;
