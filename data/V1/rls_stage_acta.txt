@@ -44,7 +44,6 @@ explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
 
-
 ? SET ROLE postgres;
 ? CREATE INDEX acta_index ON alfbasic(acta);
 ? SET ROLE abells_sdraft_u;
@@ -74,7 +73,6 @@ explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
-
 
 ? SET ROLE postgres;
 ? CREATE INDEX stage_index ON alfbasic(stage);
@@ -146,7 +144,6 @@ explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public';
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table';
 explain(analyze, FORMAT JSON) SELECT * FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral';
-explain(analyze, FORMAT JSON) SELECT * FROM alfbasic;
 
 ? SET ROLE postgres;
 ? SET ROLE tfog_abells_u;

@@ -33,7 +33,7 @@ def run_stmts():
     
     conn = psycopg2.connect("dbname=alfbasic0 user=postgres password=password")
     cur = conn.cursor()
-    ind = 0
+    ind = 4
     
     gstart = time.time()
     for line in in_file.readlines():
@@ -43,20 +43,25 @@ def run_stmts():
                 out_file.write(line)
                 if "CREATE INDEX" in line:
                     ind += 1
-            else:
-# MODIFICATIONS START HERE (as of 15.07.2020)                
-                start = time.time()         #<---  Start measuring client time
+            else:           
+                start = time.time()         
+#                cur.execute("select count(*) from alfbasic where bstream is not null")
+#                r_before = cur.fetchall()
                 cur.execute(line)
                 json = cur.fetchall()  
-                end = time.time()           #<---- End measuring client time
+                end = time.time()          
                 json = json[0][0][0]
+#                cur.execute("select count(*) from alfbasic where bstream is not null")
+#               r_after = cur.fetchall()
                 cond = str(line.count("LIKE"))
                 out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {:<6}| {}".format(json["Plan"]["Actual Rows"], json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*100, 4), json["Planning Time"], cond, ind, line[30:]))
+#                out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {:<6}| {}".format(r_after[0][0]-r_before[0][0], json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*100, 4), json["Planning Time"], cond, ind, line[30:]))
         
     gend = time.time()
     in_file.close()
     out_file.close()
     cur.close()
+    conn.commit()
     conn.close()
     
     return round((gend-gstart)*100, 4)
@@ -68,7 +73,7 @@ if __name__ == "__main__":
     
     t = run_stmts()
     
-#    print("Time(ms) taken for runnig the fuction once: ", t)
+    print("Time(ms) taken for runnig the fuction once: ", t)
     
     
         

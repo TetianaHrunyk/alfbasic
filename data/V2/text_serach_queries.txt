@@ -1,0 +1,62 @@
+? SET ROLE tfog_abells_u;
+explain (analyze, format Json) select find_text('diaddvur');
+explain (analyze, format Json) select find_text('Dvůr Králové');
+explain (analyze, format Json) select find_text('bsys@seznam.cz');
+explain (analyze, format Json) select find_text('Slouzi k inicializaci promennych - zatim jen retezce');
+
+explain (analyze, format Json) select find_text('Product 1');
+explain (analyze, format Json) select find_text('Year 1');
+explain (analyze, format Json) select find_text('Total Other Liabilities');
+
+explain (analyze, format Json) select find_text('Total money in (£)');
+explain (analyze, format Json) select find_text('12');
+explain (analyze, format Json) select find_text('Profit margin (%)');
+
+explain (analyze, format Json) select find_text('By Vertex42.com');
+explain (analyze, format Json) select find_text('Milestone #6');
+explain (analyze, format Json) select find_text('120');
+
+explain (analyze, format Json) select find_text('Dissertation III');
+explain (analyze, format Json) select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain (analyze, format Json) select find_text('68');
+
+explain (analyze, format Json) select find_text('January 2014');
+explain (analyze, format Json) select find_text('NAD 48000');
+explain (analyze, format Json) select find_text('Total Cost Material 5');
+
+explain (analyze, format Json) select find_text('Mth 6');
+explain (analyze, format Json) select find_text('Total Expenditure = (D) = B + C');
+explain (analyze, format Json) select find_text(' Annual charge £');
+
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+explain (analyze, format Json) select find_text('diaddvur');
+explain (analyze, format Json) select find_text('Dvůr Králové');
+explain (analyze, format Json) select find_text('bsys@seznam.cz');
+explain (analyze, format Json) select find_text('Slouzi k inicializaci promennych - zatim jen retezce');
+
+explain (analyze, format Json) select find_text('Product 1');
+explain (analyze, format Json) select find_text('Year 1');
+explain (analyze, format Json) select find_text('Total Other Liabilities');
+
+explain (analyze, format Json) select find_text('Total money in (£)');
+explain (analyze, format Json) select find_text('12');
+explain (analyze, format Json) select find_text('Profit margin (%)');
+
+explain (analyze, format Json) select find_text('By Vertex42.com');
+explain (analyze, format Json) select find_text('Milestone #6');
+explain (analyze, format Json) select find_text('120');
+
+explain (analyze, format Json) select find_text('Dissertation III');
+explain (analyze, format Json) select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain (analyze, format Json) select find_text('68');
+
+explain (analyze, format Json) select find_text('January 2014');
+explain (analyze, format Json) select find_text('NAD 48000');
+explain (analyze, format Json) select find_text('Total Cost Material 5');
+
+explain (analyze, format Json) select find_text('Mth 6');
+explain (analyze, format Json) select find_text('Total Expenditure = (D) = B + C');
+explain (analyze, format Json) select find_text(' Annual charge £');
+

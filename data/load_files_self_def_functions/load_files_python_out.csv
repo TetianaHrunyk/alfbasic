@@ -1,0 +1,12 @@
+rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | ncond | nind  | stmt
+----------------------------------------------------------------------------
+0       | 0.26        | 190.356        | 22.0805     | 0.025       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/piskoviste_addfunction.xlsx' 10004);
+16      | 0.26        | 6320.211       | 634.11      | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/BP_Business_Plan_Financial_Tables_FINAL.xls' 5023);
+9       | 0.26        | 32280.764      | 3230.1269   | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/business-plan-workbook.xlsx' 8703);
+24      | 0.26        | 2320.217       | 234.1015    | 0.027       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Doctoral_Business_Administration___Operations_Management_Degree_Worksheet_200630___Present.xls' 3088);
+27      | 0.26        | 35546.558      | 3556.7358   | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Financial Overview - Multiple products.xls' 3007);
+7       | 0.26        | 13842.057      | 1414.8961   | 0.055       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/piskoviste_addfunction.xlsx' 10104);
+27      | 0.26        | 9009.798       | 903.0381    | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/BP_Business_Plan_Financial_Tables_FINAL.xls' 3027);
+9       | 0.26        | 32538.683      | 3255.9634   | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/business-plan-workbook.xlsx' 8711);
+19      | 0.26        | 1858.473       | 187.9417    | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Doctoral_Business_Administration___Operations_Management_Degree_Worksheet_200630___Present.xls' 3708);
+18      | 0.26        | 23838.735      | 2385.9643   | 0.026       | 0     | 0     | select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Financial Overview - Multiple products.xls' 4607);

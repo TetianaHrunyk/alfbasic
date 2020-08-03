@@ -1,0 +1,18 @@
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+
+

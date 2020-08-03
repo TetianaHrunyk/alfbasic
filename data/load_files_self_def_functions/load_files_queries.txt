@@ -1,0 +1,8 @@
+explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/piskoviste_addfunction.xlsx', 10104);
+explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/BP_Business_Plan_Financial_Tables_FINAL.xls', 3027);
+
+explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/business-plan-workbook.xlsx', 8711);
+explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Doctoral_Business_Administration___Operations_Management_Degree_Worksheet_200630___Present.xls', 3708);
+explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/Financial Overview - Multiple products.xls', 4607);
+
+

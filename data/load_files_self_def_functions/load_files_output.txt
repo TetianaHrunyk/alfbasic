@@ -1,0 +1,38 @@
+alfbasic0=# select count(*) from alfbasic where bstream is not null;
+ count 
+-------
+  1083
+(1 row)
+
+alfbasic0=# explain(analyze, FORMAT JSON) select insert_file_into_alfbasic('home/tania/Code/alf/data/exported_files/original_files/piskoviste_addfunction.xlsx', 104);
+
+                QUERY PLAN                 
+-------------------------------------------
+ [                                        +
+   {                                      +
+     "Plan": {                            +
+       "Node Type": "Result",             +
+       "Parallel Aware": false,           +
+       "Startup Cost": 0.00,              +
+       "Total Cost": 0.26,                +
+       "Plan Rows": 1,                    +
+       "Plan Width": 1,                   +
+       "Actual Startup Time": 2219219.282,+
+       "Actual Total Time": 2219219.282,  +
+       "Actual Rows": 1,                  +
+       "Actual Loops": 1                  +
+     },                                   +
+     "Planning Time": 0.034,              +
+     "Triggers": [                        +
+     ],                                   +
+     "Execution Time": 2219219.818        +
+   }                                      +
+ ]
+(1 row)
+
+
+alfbasic0=# select count(*) from alfbasic where bstream is not null;
+ count 
+-------
+  1831
+

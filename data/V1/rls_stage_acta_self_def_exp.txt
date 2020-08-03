@@ -1,0 +1,47 @@
+? SET ROLE tfog_abells_u;
+
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE abells_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_u;
+
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE acoast_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND tenant LIKE 'fog' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;

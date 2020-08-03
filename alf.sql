@@ -1,3 +1,5 @@
+--------------------------------------------------TABLES DEFINITION----------------------------------------------------------------
+
 --For ensuring referential integrity we would like to store all the tenants.
 CREATE OR REPLACE DATABASE alfbasic0;
 
@@ -67,15 +69,25 @@ CREATE TABLE alfbasic (
 	stage VARCHAR(30) REFERENCES stages(stage) ON DELETE CASCADE ON UPDATE CASCADE,
 	udim1 VARCHAR(30) REFERENCES udim1(dname) ON DELETE CASCADE ON UPDATE CASCADE,
 	udim2 VARCHAR(30) REFERENCES udim2(dname) ON DELETE CASCADE ON UPDATE CASCADE,
-	udim3 VARCHAR(30) REFERENCES udim3(dname) ON DELETE CASCADE ON UPDATE CASCADE
+	udim3 VARCHAR(30) REFERENCES udim3(dname) ON DELETE CASCADE ON UPDATE CASCADE,
+	bstream BYTE ARRAY,
+	file_type VARCHAR(10),
+	svector tsvector,
+	attachment BOOLEAN default false,
+	asize int default 0
 );
 --Run fill_alfbasic.py to fill the table with random values
 --To ensure reproducibility of the rest of the script, do not modify tenants.csv and acts.csv
 
+
+
+
+
+
+---------------------------------------------GROUPS DEFINITION-------------------------------------------------------------
 --Each tenant, act, CaseType, stage, etc. should have its own group
 --In total, there will be #tenants+#acts+#CaseType+#stages groups
 --Users will be assigned to either group in each cathegory
-
 CREATE GROUP fog_tenant_group;
 
 CREATE GROUP bells_acta_group;
@@ -152,8 +164,10 @@ ALTER GROUP udim2_table_group ADD USER tfog_acoast_cbudget_sdraft_u1public_u2tab
 ALTER GROUP udim3_neutral_group ADD USER tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
 
 
-ALTER TABLE alfbasic ENABLE ROW LEVEL SECURITY;
 
+
+---------------------------------------POLICIES DEFINITION------------------------------------------------------------
+ALTER TABLE alfbasic ENABLE ROW LEVEL SECURITY;
 --NOTE: at least one policy in each query has to be PERMISSIVE. Depending on the application needs,
 --the policy that is permissive has to be modified. The permissive policy has to be the one that
 --occurrs in all the queries. In this case, policies on acta are permissive. Others are restrictive.
@@ -243,86 +257,68 @@ CREATE INDEX acty_index ON alfbasic(acta);
 CREATE INDEX stage_index ON alfbasic(stage);
 CREATE INDEX casetype_index ON alfbasic(casetype);
 
---Table for storing files and some further metadata on them
 
-CREATE TABLE files (
+
+
+
+-----------------------------------------------------------ATTACHMENTS---------------------------------------------------------------------
+--Table for storing large files that do not require extremely high level of security
+CREATE TABLE attachments (
 	CaseNumber INTEGER PRIMARY KEY REFERENCES alfbasic(CaseNumber),
 	file_oid oid,
 	mod_date TIMESTAMP default now(),
-	cur_path VARCHAR(200) default '/home/tania/Downloads',
+	path VARCHAR(150),
 	meta1 VARCHAR(30) default 'xls',
 	meta2 VARCHAR(30) default 'file_creator',
 	meta3 VARCHAR(30) default 'last_modified_by'
 );
-
-GRANT SELECT ON TABLE files TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
-
-CREATE OR REPLACE FUNCTION get_lo_size(oid) RETURNS bigint
-LANGUAGE 'plpgsql'
-AS $$
-DECLARE
-    fd integer;
-    sz bigint;
-BEGIN
-    fd := lo_open($1, x'40000'::int);
-    PERFORM lo_lseek(fd, 0, 2);
-    sz := lo_tell(fd);
-    PERFORM lo_close(fd);
-    RETURN sz;
-END;
-$$;
-
-
+GRANT SELECT ON TABLE attachments TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
 --PostgreSQL documentation on working with large files: https://www.postgresql.org/docs/10/lo-interfaces.html
 
-CREATE OR REPLACE FUNCTION insert_files_into_alfbasic(path text, mod_val integer) RETURNS boolean
+
+CREATE OR REPLACE FUNCTION insert_attachment(path text, cn integer) RETURNS boolean
 AS $$ 
-DECLARE r INTEGER;
 BEGIN
-	FOR r IN
-        SELECT CaseNumber FROM alfbasic WHERE mod(CaseNumber, mod_val) = 0
-    LOOP
-		IF r NOT IN (SELECT CaseNumber FROM files) THEN
-	        INSERT INTO files(CaseNumber, path, file_oid) VALUES(r, path, lo_import(path));
-		END IF;    
-	END LOOP;
+    IF cn NOT IN (SELECT CaseNumber FROM attachments) THEN
+	    INSERT INTO attachments(CaseNumber, path, file_oid) VALUES(cn, path, lo_import(path));
+	END IF; 
+	UPDATE alfbasic SET attachment = true WHERE CaseNumber = cn;
+	UPDATE alfbasic SET file_type = get_file_type(path) WHERE CaseNumber = cn;   
 RETURN true;
 END;
 $$ LANGUAGE plpgsql;
-
-INSERT INTO files(CaseNumber, file_oid) VALUES(50090, lo_import('/home/tania/Downloads/piskoviste_addfunction.xlsx'));
 --select * from insert_files_into_alfbasic('/home/tania/Code/alf/data/report1.docx', 100);
-
---For retriving a file a function int lo_export(PGconn *conn, Oid lobjId, const char *filename) has to be used.
---This functions exports the data from the file stored in the database to a file that already eists in the operating system.
---Therefore, one has to make sure that the file exixts and it has appropriate level access.
---Further issue is that we have to decide if we allow to overwrite the file or not, and manage the query accordingly.
+--For retriving a file a function int lo_export() has to be used. 
+--In order to use lo_export() server-side, user has to be a  superuser, so in our case we can only use client-side lo_export().
 
 
---TABLE FOR STORING PREPROCESSED TEXT FOR TEXT SEARCH
-CREATE TABLE fiels_seach (
-	search_id SERIAL PRIMARY KEY,
-	CaseNumber INTEGER REFERENCES alfbasic(CaseNumber),
-	text TEXT
-);
 
---Python function for reading excel
---Before using Python in PostgreSQL:
---  In Ubuntu shell: sudo apt-get install postgresql-plpython3-10
---  From PostgreSQl client: create extension plpython3u;
 
+------------------------------------------FUNCTION PREPARING DATA FOR SEARCH VECTORS----------------------------------
 CREATE  OR REPLACE FUNCTION read_excel_file(path text)
-  RETURNS varchar[]
+  RETURNS varchar
 AS $$
-    import math
-    import pandas as pd
-    import re
-
-    limit = 1e+9
     
+    import re
+    import sys
+    sys.path.insert(0, '/home/tania/.local/lib/python3.6/site-packages')
     def chunkstring(string, length):
         return [string[0+i:length+i] for i in range(0, len(string), length)]
-
+    import os
+    current_dir = os.getcwd()
+    try:
+        import pandas as pd
+        imported = True
+    except:
+        imported = False
+    while len(os.getcwd()) > 1:
+        os.chdir("..")
+    if not imported:
+        try:
+            import pandas as pd
+        except:
+            os.chdir(current_dir)  
+            exit()      
     xls = pd.ExcelFile(path)
     
     excel_csv_tot = ""
@@ -332,39 +328,187 @@ AS $$
         excel.dropna(how="all", axis = 0, inplace=True)
         excel_csv = excel.to_csv(index=False, line_terminator=" ")
         excel_csv=excel_csv.lower()
-        excel_csv=excel_csv.replace('"', " ")
+#        excel_csv=excel_csv.replace('"', " ")
         excel_csv = re.sub(r",+", " ", excel_csv)
         excel_csv = re.sub(r"\ +", " ", excel_csv)
         excel_csv=excel_csv.strip()
         excel_csv_tot += excel_csv
-    
-    size = len(excel_csv_tot.encode("utf8"))
-    
-    if size <= limit:
-        return [excel_csv]
-    else:
-    #NOTE: the flaw of this function is that it will break every 10e+9th word 
-    #unless a blank space will occasionally occur at the breaking point
-        chunks = size//limit + 1
-        chunk_size = math.ceil(len(excel_csv_tot)/chunks)
-        return chunkstring(excel_csv_tot, chunk_size)
-        
+    os.chdir(current_dir)
+   
+    return excel_csv_tot
+
 $$ LANGUAGE plpython3u;
 
-CREATE OR REPLACE FUNCTION load_search_vectors() 
-RETURNS trigger 
+
+
+
+
+-----------------------------------LOADING FILES DIRECTLY INTO ALFBASIC-----------------------------------
+--Python function for reading excel
+--Before using Python in PostgreSQL:
+--  In Ubuntu shell: sudo apt-get install postgresql-plpython3-10
+--  From PostgreSQL client: CREATE EXTENSION plpython3u;
+
+CREATE  OR REPLACE FUNCTION get_bin_array(path text)
+  RETURNS bytea
 AS $$
-DECLARE vector VARCHAR;
+    import os, sys
+    current_dir = os.getcwd()
+    sys.path.insert(0, '/')
+    try:
+        try: 
+            f = open(path, mode = "rb")
+        except:    
+            while len(os.getcwd()) > 1:
+                os.chdir("..")
+            f = open(path, mode = "rb")
+        stream = f.read()
+        os.chdir(current_dir)
+        f.close()
+    except:
+        os.chdir(current_dir)
+    os.chdir(current_dir)
+    return stream
+$$ LANGUAGE plpython3u;
+
+
+
+
+CREATE  OR REPLACE FUNCTION get_file_type(path text)
+  RETURNS varchar
+AS $$
+    i = -1
+    while path[i] != ".":
+        i-=1
+    return path[i+1:]
+$$ LANGUAGE plpython3u;
+
+
+
+
+--The following function supposes that the metadata on the file already is in the alfbasic table.
+--There two possible scenarios for the future:
+--      1.First load the metadata and then call a trigger to load the file
+--      2.(probably better) Create a function that would load the metadata and call the load_file() function inside of it
+CREATE OR REPLACE FUNCTION load_file(path TEXT, CN INTEGER) 
+RETURNS boolean
+AS $$
+DECLARE read_file BYTEA;
+BEGIN 
+    SELECT get_bin_array(path) INTO read_file;   
+    UPDATE alfbasic SET bstream = read_file  WHERE CaseNumber=CN;
+    UPDATE alfbasic SET file_type = get_file_type(path) WHERE CaseNumber=CN;
+    UPDATE alfbasic SET svector = to_tsvector(read_excel_file(path)) WHERE CaseNumber=CN;
+    UPDATE alfbasic SET asize = octet_length(read_file) WHERE CaseNumber=CN;
+    RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
+-----------------------------------EXPORTING FILES STORED DIRECTLY IN ALFBASIC-----------------------------------
+    
+
+CREATE  OR REPLACE FUNCTION export_file_helper(p varchar, file_type varchar, casenumber int, stream bytea)
+RETURNS BOOLEAN
+AS $$
+    global p
+    global file_type
+    global casenumber
+    global stream
+    import os, sys, stat
+    current_dir = os.getcwd()
+    try:
+        try:
+            path_to_new_file = p+'/'+str(casenumber)+"."+file_type
+            if not os.path.isfile(path_to_new_file):
+                os.mknod(path_to_new_file)
+            os.system('chmod 777 '+path_to_new_file)
+            f = open(path_to_new_file, "wb+")
+        except:
+            while len(os.getcwd()) > 1:
+                os.chdir("..") 
+            path_to_new_file = p+'/'+str(casenumber)+"."+file_type
+            if not os.path.isfile(path_to_new_file):
+                os.mknod(path_to_new_file)
+            os.system('chmod 777 '+path_to_new_file)
+            f = open(path_to_new_file, "wb+")
+        f.write(stream)
+        f.close()
+    except:
+        sys.exit("Exit from export_file_helper")
+    finally:
+        os.chdir(current_dir)
+    
+    return True
+
+$$ LANGUAGE plpython3u;    
+
+
+
+
+CREATE OR REPLACE FUNCTION export_file(CN INTEGER, p VARCHAR) 
+RETURNS boolean
+AS $$
+DECLARE ft VARCHAR;
+        stream bytea;
+        res BOOLEAN;
+BEGIN    
+    SELECT file_type FROM alfbasic WHERE casenumber = CN INTO ft;
+    SELECT bstream FROM alfbasic WHERE casenumber = CN INTO stream;
+    SELECT * FROM export_file_helper(p, ft, CN, stream) INTO res;
+    RETURN res;
+END;
+$$ LANGUAGE plpgsql;
+
+
+-----------------------------INSERT TEST DATA INTO ALFBASIC--------------------------------
+CREATE OR REPLACE FUNCTION insert_file_into_alfbasic(path text, mod_val integer) RETURNS boolean
+AS $$ 
+DECLARE r INTEGER;
 BEGIN
-    FOR vector IN
-        SELECT * FROM read_excel_file()
+	FOR r IN
+        SELECT CaseNumber FROM alfbasic WHERE mod(CaseNumber, mod_val) = 0
     LOOP
-		IF r NOT IN (SELECT CaseNumber FROM files) THEN
-	        INSERT INTO files(CaseNumber, file_oid) VALUES(r, lo_import(path));
+		IF r NOT IN (SELECT CaseNumber FROM alfbasic WHERE svector IS NOT NULL) THEN
+	        PERFORM load_file(path, r);
 		END IF;    
 	END LOOP;
+RETURN true;
 END;
-$$ LANGUAGE pgplpsql;
+$$ LANGUAGE plpgsql;
+
+
+
+
+----------------------------------SEARCHING DATA IN FILES-----------------------------------
+CREATE  OR REPLACE FUNCTION qparser(query TEXT)
+  RETURNS varchar
+AS $$
+    global query
+    query = query.split()
+    return ' & '.join(query)
+$$ LANGUAGE plpython3u; 
+
+CREATE OR REPLACE FUNCTION find_text(t VARCHAR) 
+RETURNS SETOF INTEGER
+AS $$
+DECLARE r INTEGER;
+BEGIN  
+    FOR r IN
+        SELECT CaseNumber FROM alfbasic WHERE svector @@ to_tsquery(qparser(t))
+    LOOP
+        RETURN NEXT r;
+    END LOOP;
+    RETURN;  
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+
+
+
+
 
 
 

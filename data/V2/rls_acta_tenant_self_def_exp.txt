@@ -1,0 +1,25 @@
+? SET ROLE tfog_abells_u;
+
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND stage LIKE 'draft' and udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;

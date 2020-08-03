@@ -1,0 +1,103 @@
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'draft' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'task' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'ready' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'delete' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'close' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'statistics' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'logistics' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'employees' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'salary' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND acta LIKE 'arrests' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND casetype LIKE 'statistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND casetype LIKE 'statistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND casetype LIKE 'logistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells' AND bstream is not Null;
+
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND acta LIKE 'bells' AND bstream is not Null;
+

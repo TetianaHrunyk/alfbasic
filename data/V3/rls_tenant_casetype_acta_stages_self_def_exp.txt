@@ -1,0 +1,206 @@
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+
+? SET ROLE tfog_abells_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cbudget_sdraft_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_cstatistics_stask_u;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND bstream is not Null;
+SELECT CaseNumber FROM alfbasic WHERE udim1 LIKE 'public' AND udim2 LIKE 'table' AND udim3 LIKE 'neutral' AND bstream is not Null;
+
+
+? SET ROLE postgres;
+

@@ -1,0 +1,7 @@
+/home/tania/Code/alf/data/exported_files/original_files/Doctoral_Business_Administration___Operations_Management_Degree_Worksheet_200630___Present.xls, 35328
+/home/tania/Code/alf/data/exported_files/original_files/business-plan-workbook.xlsx, 96325
+/home/tania/Code/alf/data/exported_files/original_files/BP_Business_Plan_Financial_Tables_FINAL.xls, 53248
+/home/tania/Code/alf/data/exported_files/original_files/5-year-financial-plan.xlsx, 157457
+/home/tania/Code/alf/data/exported_files/original_files/Financial Overview - Multiple products.xls, 293376
+/home/tania/Code/alf/data/exported_files/original_files/Sole-trader-or-Partnership-VAT-Business-Plan-Financials-2017.xls, 435200
+/home/tania/Code/alf/data/exported_files/original_files/piskoviste_addfunction.xlsx, 37807
