@@ -1,0 +1,37 @@
+rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | fsize | role
+----------------------------------------------------------------------------
+3       | 0.26        | 153.852        | 158.323     | 0.04        | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 130.052        | 136.622     | 0.03        | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 44.682         | 47.7915     | 0.027       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 52.162         | 62.4056     | 0.028       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 87.879         | 107.3892    | 0.028       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 92.513         | 120.6386    | 0.03        | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 37.061         | 39.7191     | 0.03        | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 147.219        | 151.3519    | 0.026       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 126.138        | 132.2856    | 0.026       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 44.198         | 47.2951     | 0.027       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 38.437         | 48.6033     | 0.028       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 93.398         | 112.8139    | 0.031       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 73.869         | 103.1246    | 0.031       | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 26.6           | 29.1376     | 0.027       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 113.782        | 117.7807    | 0.026       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 137.316        | 143.373     | 0.027       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 91.14          | 94.2404     | 0.026       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 45.33          | 55.5916     | 0.028       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 94.41          | 112.7708    | 0.031       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 101.734        | 130.7361    | 0.03        | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 38.635         | 41.1539     | 0.027       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 167.688        | 171.7153    | 0.026       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 93.695         | 99.8843     | 0.027       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 92.77          | 95.8896     | 0.027       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 61.696         | 71.8758     | 0.09        | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 97.661         | 115.7508    | 0.031       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 99.716         | 129.4985    | 0.031       | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 37.559         | 40.2043     | 0.027       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 111.53         | 115.4969    | 0.026       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 161.36         | 167.5267    | 0.026       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 61.696         | 64.7914     | 0.027       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 59.434         | 69.3235     | 0.028       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.26        | 96.992         | 114.7182    | 0.029       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 131.622        | 162.4091    | 0.031       | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.26        | 37.26          | 39.7499     | 0.027       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral

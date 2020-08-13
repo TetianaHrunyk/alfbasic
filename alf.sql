@@ -152,6 +152,7 @@ ALTER GROUP fog_tenant_group ADD USER tfog_admin;
 
 
 GRANT SELECT ON TABLE alfbasic TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
+GRANT INSERT, UPDATE ON TABLE alfbasic TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
 
 --Varianta 4: RLS na RLS na tenant, acta, CaseType, stage, udim1, udim2, udim3
 CREATE USER tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
@@ -302,8 +303,6 @@ AS $$
     import re
     import sys
     sys.path.insert(0, '/home/tania/.local/lib/python3.6/site-packages')
-    def chunkstring(string, length):
-        return [string[0+i:length+i] for i in range(0, len(string), length)]
     import os
     current_dir = os.getcwd()
     try:
@@ -339,6 +338,47 @@ AS $$
 
 $$ LANGUAGE plpython3u;
 
+CREATE  OR REPLACE FUNCTION read_excel_file_from_bin(f BYTEA)
+  RETURNS varchar
+AS $$
+    
+    import re
+    import sys
+    sys.path.insert(0, '/home/tania/.local/lib/python3.6/site-packages')
+    import os
+    current_dir = os.getcwd()
+    try:
+        import pandas as pd
+        imported = True
+    except:
+        imported = False
+    while len(os.getcwd()) > 1:
+        os.chdir("..")
+    if not imported:
+        try:
+            import pandas as pd
+        except:
+            os.chdir(current_dir)  
+            exit()      
+    xls = pd.ExcelFile(f)
+    
+    excel_csv_tot = ""
+    for sheet in xls.sheet_names:
+        excel = pd.read_excel(f, separator = " ", sheet_name=sheet)
+        excel.dropna(how="all", axis = 1, inplace=True)
+        excel.dropna(how="all", axis = 0, inplace=True)
+        excel_csv = excel.to_csv(index=False, line_terminator=" ")
+        excel_csv=excel_csv.lower()
+#        excel_csv=excel_csv.replace('"', " ")
+        excel_csv = re.sub(r",+", " ", excel_csv)
+        excel_csv = re.sub(r"\ +", " ", excel_csv)
+        excel_csv=excel_csv.strip()
+        excel_csv_tot += excel_csv
+    os.chdir(current_dir)
+   
+    return excel_csv_tot
+
+$$ LANGUAGE plpython3u;
 
 
 
@@ -403,6 +443,33 @@ BEGIN
     RETURN true;
 END;
 $$ LANGUAGE plpgsql;
+
+
+------------------BIN ONLY
+CREATE OR REPLACE FUNCTION load_file_from_bin(arr BYTEA, CN INTEGER) 
+RETURNS boolean
+AS $$
+BEGIN 
+    UPDATE alfbasic SET bstream = arr  WHERE CaseNumber=CN;
+    UPDATE alfbasic SET file_type = 'xls' WHERE CaseNumber=CN;
+    UPDATE alfbasic SET asize = octet_length(arr) WHERE CaseNumber=CN;
+    RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION load_file_from_bin_with_ts(arr BYTEA, CN INTEGER) 
+RETURNS boolean
+AS $$
+BEGIN 
+    UPDATE alfbasic SET bstream = arr  WHERE CaseNumber=CN;
+    UPDATE alfbasic SET file_type = 'xls' WHERE CaseNumber=CN;
+    UPDATE alfbasic SET asize = octet_length(arr) WHERE CaseNumber=CN;
+    UPDATE alfbasic SET svector = to_tsvector(read_excel_file_from_bin(arr)) WHERE CaseNumber=CN;
+    RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
 
 
 -----------------------------------EXPORTING FILES STORED DIRECTLY IN ALFBASIC-----------------------------------
@@ -477,7 +544,91 @@ RETURN true;
 END;
 $$ LANGUAGE plpgsql;
 
+----------------BIN ONLY
+CREATE OR REPLACE FUNCTION insert_bin_into_alfbasic(arr BYTEA, mod_val integer) RETURNS boolean
+AS $$ 
+DECLARE r INTEGER;
+BEGIN
+	FOR r IN
+        SELECT CaseNumber FROM alfbasic WHERE mod(CaseNumber, mod_val) = 0
+    LOOP
+		IF r NOT IN (SELECT CaseNumber FROM alfbasic WHERE svector IS NOT NULL) THEN
+	        PERFORM load_file_from_bin(arr, r);
+		END IF;    
+	END LOOP;
+RETURN true;
+END;
+$$ LANGUAGE plpgsql;
 
+CREATE OR REPLACE FUNCTION insert_bin_ts_into_alfbasic(arr BYTEA, mod_val integer) RETURNS boolean
+AS $$ 
+DECLARE r INTEGER;
+BEGIN
+	FOR r IN
+        SELECT CaseNumber FROM alfbasic WHERE mod(CaseNumber, mod_val) = 0
+    LOOP
+		IF r NOT IN (SELECT CaseNumber FROM alfbasic WHERE svector IS NOT NULL) THEN
+	        PERFORM load_file_from_bin_with_ts(arr, r) ;
+		END IF;    
+	END LOOP;
+RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+
+CREATE OR REPLACE FUNCTION add_ts_vectors() 
+RETURNS boolean
+AS $$
+DECLARE CN INTEGER;
+arr BYTEA;
+BEGIN 
+    FOR CN IN
+        SELECT CaseNumber FROM alfbasic WHERE bstream is not null and svector is null
+    LOOP
+        SELECT bstream FROM alfbasic WHERE CaseNumber=CN INTO arr;
+        UPDATE alfbasic SET file_type = 'xls' WHERE CaseNumber=CN;
+        UPDATE alfbasic SET asize = octet_length(arr) WHERE CaseNumber=CN;   
+	END LOOP;
+RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION add_ts_vectors_by_cn(mod_val int) 
+RETURNS boolean
+AS $$
+DECLARE CN INTEGER;
+arr BYTEA;
+BEGIN 
+    FOR CN IN
+        SELECT CaseNumber FROM alfbasic WHERE CaseNumber%mod_val = 0
+    LOOP
+        SELECT bstream FROM alfbasic WHERE CaseNumber=CN INTO arr;
+        UPDATE alfbasic SET file_type = 'xls' WHERE CaseNumber=CN;
+        UPDATE alfbasic SET asize = octet_length(arr) WHERE CaseNumber=CN;   
+	END LOOP;
+RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+
+CREATE OR REPLACE FUNCTION add_ts_vector(CN int) 
+RETURNS boolean
+AS $$
+DECLARE CN INTEGER;
+arr BYTEA;
+BEGIN 
+    SELECT bstream FROM alfbasic WHERE CaseNumber=CN INTO arr;
+    UPDATE alfbasic SET file_type = 'xls' WHERE CaseNumber=CN;
+    UPDATE alfbasic SET asize = octet_length(arr) WHERE CaseNumber=CN;
+    UPDATE alfbasic SET svector = to_tsvector(read_excel_file_from_bin(arr)) WHERE CaseNumber=CN;    
+RETURN true;
+END;
+$$ LANGUAGE plpgsql;
 
 
 ----------------------------------SEARCHING DATA IN FILES-----------------------------------

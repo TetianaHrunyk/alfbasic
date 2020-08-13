@@ -1,0 +1,17 @@
+rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | fsize | role
+----------------------------------------------------------------------------
+2       | 0.52        | 1701.949       | 1707.2513   | 0.052       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 7595.963       | 7605.3569   | 0.085       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 1061.637       | 1065.4795   | 0.052       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 4288.324       | 4299.0294   | 0.055       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 2470.392       | 2490.3321   | 0.055       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 2069.489       | 2097.2152   | 0.057       | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 4849.445       | 4852.7191   | 0.052       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 1229.288       | 1233.9561   | 0.048       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 7026.46        | 7033.4854   | 0.054       | 96325 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 1054.157       | 1057.7807   | 0.052       | 53248 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 6460.237       | 6470.2637   | 0.053       | 157457| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 3639.365       | 3660.8851   | 0.054       | 293376| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 1392.552       | 1421.4873   | 0.056       | 435200| tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+2       | 0.52        | 3258.941       | 3262.2797   | 0.054       | 37807 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral
+3       | 0.52        | 1363.215       | 1367.9984   | 0.048       | 35328 | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral

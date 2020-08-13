@@ -54,7 +54,7 @@ def run_stmts():
 #                cur.execute("select count(*) from alfbasic where bstream is not null")
 #               r_after = cur.fetchall()
                 cond = str(line.count("LIKE"))
-                out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {:<6}| {}".format(json["Plan"]["Actual Rows"], json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*100, 4), json["Planning Time"], cond, ind, line[30:]))
+                out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {:<6}| {}".format(json["Plan"]["Actual Rows"], json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*1000, 4), json["Planning Time"], cond, ind, line[30:]))
 #                out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {:<6}| {}".format(r_after[0][0]-r_before[0][0], json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*100, 4), json["Planning Time"], cond, ind, line[30:]))
         
     gend = time.time()
@@ -64,7 +64,7 @@ def run_stmts():
     conn.commit()
     conn.close()
     
-    return round((gend-gstart)*100, 4)
+    return round((gend-gstart)*1000, 4)
     
     
 

@@ -1,0 +1,126 @@
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'budget' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND casetype LIKE 'logistics' AND acta LIKE 'bells' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND acta LIKE 'bells' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND udim1 LIKE 'public' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'draft' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'statistics' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND acta LIKE 'coast' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND acta LIKE 'bells' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND casetype LIKE 'employees' AND acta LIKE 'bells' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND casetype LIKE 'salary' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND casetype LIKE 'employees' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND acta LIKE 'bells' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'task' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'statistics' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND acta LIKE 'programs' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND acta LIKE 'bells' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND casetype LIKE 'employees' AND acta LIKE 'bells' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND udim3 LIKE 'very important' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'ready' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'logistics' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND stage LIKE 'delete' AND acta LIKE 'bells' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND stage LIKE 'close' AND acta LIKE 'bells' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND casetype LIKE 'salary' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND casetype LIKE 'statistics' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'protected' AND acta LIKE 'bells' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND udim2 LIKE 'text_doc' AND acta LIKE 'bells' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'ready' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'employees' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' AND acta LIKE 'meaning' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'vacuum' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' AND stage LIKE 'close' AND acta LIKE 'bells' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('120');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'surges' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND acta LIKE 'bells' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' AND stage LIKE 'draft' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND acta LIKE 'bells' intersect  select find_text('Total Expenditure = (D) = B + C');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' AND stage LIKE 'task' AND casetype LIKE 'logistics' AND udim1 LIKE 'protected' AND acta LIKE 'bells' intersect  select find_text('12');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' AND stage LIKE 'task' AND casetype LIKE 'budget' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND acta LIKE 'bells' intersect  select find_text('Total Cost Material 5');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'booms' AND stage LIKE 'ready' AND casetype LIKE 'employees' AND udim1 LIKE 'protected' AND udim2 LIKE 'table' AND acta LIKE 'bells' intersect  select find_text('Total Other Liabilities');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' AND stage LIKE 'ready' AND casetype LIKE 'salary' AND udim1 LIKE 'public' AND udim2 LIKE 'diagram' AND udim3 LIKE 'importnat' AND acta LIKE 'bells' intersect  select find_text('January 2014');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' AND stage LIKE 'delete' AND casetype LIKE 'budget' AND udim1 LIKE 'private' AND udim2 LIKE 'table' AND udim3 LIKE 'not important' AND acta LIKE 'bells' intersect  select find_text('Product 1');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic intersect  select find_text('Dvůr Králové');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('diaddvur');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('Dvůr Králové');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('Slouzi k inicializaci promennych - zatim jen retezce');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('Product 1');
+ component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('68');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'fog' intersect  select find_text('January 2014');
+
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'drydock' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' intersect  select find_text('Slouzi k inicializaci promennych - zatim jen retezce');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'sundays' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' intersect  select find_text('bsys@seznam.cz');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' intersect  select find_text('Slouzi k inicializaci promennych - zatim jen retezce');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' intersect  select find_text('Dissertation III');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'enlistments' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'painting' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'pedals' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE tenant LIKE 'tissues' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'draft' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'ready' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'ready' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'close' intersect  select find_text('By Vertex42.com');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE stage LIKE 'close' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'statistics' intersect  select find_text('Hybrid: 4 days Ft. Lauderdale w/online component');
+explain(analyze, FORMAT JSON) SELECT CaseNumber FROM alfbasic WHERE casetype LIKE 'logistics' intersect  select find_text('Total Expenditure = (D) = B + C');
