@@ -1,0 +1,461 @@
+rows    | tot_costs   | exec_time(ms)  | exec_time_cs| ncond | role        | av_data   
+----------------------------------------------------------------------------
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 102.618        | 10.8428     | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 30.238         | 3.3307      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.011         | 3.5818      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 34.071         | 3.6958      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 35.867         | 3.8703      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 42.474         | 4.5329      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.483         | 3.6538      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.522         | 3.1567      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.812         | 4.3602      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 41.149         | 4.3978      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.49          | 5.3404      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.347         | 3.3213      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 29.064         | 3.1921      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.53          | 3.5407      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.745         | 3.6743      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.589         | 3.8507      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 40.813         | 4.3619      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 32.691         | 3.5807      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.38          | 3.1234      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.345         | 4.3276      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 40.521         | 4.3619      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 50.328         | 5.3259      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.517         | 3.3567      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.399         | 3.2357      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.588         | 3.5462      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.375         | 3.629       | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.383         | 3.8387      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.882         | 4.3774      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.213         | 3.6266      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.353         | 3.1311      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 41.214         | 4.4124      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 40.258         | 4.3242      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 51.059         | 5.3947      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.883         | 3.3828      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 30.772         | 3.4472      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.152         | 3.6333      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.849         | 3.6759      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 36.025         | 3.9024      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.159         | 4.4198      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 32.945         | 3.6118      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.197         | 3.1127      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.906         | 4.3808      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.724         | 4.365       | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 51.348         | 5.4355      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.655         | 3.367       | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 29.465         | 3.2513      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.919         | 3.6154      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.37          | 3.6353      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.694         | 3.888       | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 41.451         | 4.4539      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.635         | 3.6891      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.594         | 3.1638      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.97          | 4.3936      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 39.817         | 4.3169      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 50.605         | 5.3619      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.702         | 3.3715      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 28.999         | 3.1882      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 31.989         | 3.5018      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 32.7           | 3.5822      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.191         | 3.8069      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.207         | 4.3388      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 32.813         | 3.5949      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 27.792         | 3.0865      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.51          | 4.3551      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 39.84          | 4.2866      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 50.506         | 5.3583      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.458         | 3.3437      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.729         | 3.2825      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.32          | 3.6366      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 34.699         | 3.7942      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 37.337         | 4.0822      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.325         | 4.4308      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.539         | 3.658       | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.523         | 3.1331      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 41.197         | 4.4351      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.36          | 4.3365      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 51.097         | 5.4016      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.39          | 3.3432      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 29.737         | 3.2944      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.641         | 3.5589      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 32.674         | 3.5553      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.782         | 3.8603      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 40.583         | 4.3647      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.022         | 3.591       | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 27.542         | 3.0515      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 41.05          | 4.3887      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 39.496         | 4.2356      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 51.388         | 5.4263      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.065         | 3.3022      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.211         | 3.2055      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.351         | 3.5293      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.146         | 3.6044      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.577         | 3.8443      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.048         | 4.2853      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.142         | 3.6231      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 27.722         | 3.0586      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.128         | 4.2967      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 40.222         | 4.3124      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 49.75          | 5.271       | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.82          | 3.3633      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.968         | 3.2906      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.339         | 3.6075      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.467         | 3.6272      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 36.253         | 3.9054      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 40.989         | 4.383       | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.27          | 3.62        | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.035         | 3.0898      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.516         | 4.3353      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.062         | 4.2807      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.47          | 5.3238      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.271         | 3.3163      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 28.469         | 3.131       | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.943         | 3.5862      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 32.784         | 3.5707      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 34.984         | 3.7809      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 40.479         | 4.3306      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 32.951         | 3.5865      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.178         | 3.1054      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 39.917         | 4.271       | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 39.983         | 4.2777      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 49.728         | 5.259       | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.864         | 3.3872      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.588         | 3.2455      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.975         | 3.585       | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 32.678         | 3.5518      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 34.778         | 3.7851      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.417         | 4.3301      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.215         | 3.6112      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.099         | 3.1075      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.176         | 4.3036      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 39.929         | 4.2796      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 49.884         | 5.2827      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.483         | 3.321       | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.839         | 3.2739      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 32.711         | 3.5486      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.755         | 3.667       | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 35.627         | 3.84        | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 40.628         | 4.3427      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 32.594         | 3.5404      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.095         | 3.0959      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 41.168         | 4.4004      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.462         | 4.3281      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 51.076         | 5.3933      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.419         | 3.3257      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 29.064         | 3.1994      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.749         | 3.5591      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.134         | 3.6055      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.379         | 3.833       | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 40.85          | 4.3827      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.153         | 3.6075      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.285         | 3.1179      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.433         | 4.3297      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 39.799         | 4.2624      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 50.569         | 5.3436      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.447         | 3.3324      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.317         | 3.2283      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.809         | 3.5732      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.356         | 3.6232      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.651         | 3.8618      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.743         | 4.3689      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.331         | 3.6396      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.235         | 3.1151      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.938         | 4.3834      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 40.235         | 4.3137      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 50.602         | 5.3618      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.83          | 3.3581      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.911         | 3.285       | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.255         | 3.6208      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.919         | 3.698       | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 36.16          | 3.9126      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.446         | 4.4464      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.524         | 3.6423      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.353         | 3.1233      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 41.086         | 4.4067      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.405         | 4.3412      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.814         | 5.3628      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.129         | 3.316       | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 28.924         | 3.2002      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.722         | 3.5805      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.305         | 3.6314      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.241         | 3.8232      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 41.045         | 4.4106      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.025         | 3.6032      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 27.703         | 3.0723      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.157         | 4.3152      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 40.067         | 4.3242      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 50.223         | 5.3395      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.367         | 3.3505      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.722         | 3.2862      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 36.408         | 3.9313      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 35.572         | 4.0026      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 38.818         | 4.2521      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 41.499         | 4.4457      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 34.533         | 3.7505      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.668         | 3.1656      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 41.568         | 4.4477      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 40.511         | 4.3516      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 49.983         | 5.3036      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 31.237         | 3.4204      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.703         | 3.2538      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.236         | 3.6094      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 34.411         | 3.7316      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 36.376         | 3.9228      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.637         | 4.4468      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.594         | 3.6454      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.466         | 3.1386      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.385         | 4.3558      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.466         | 4.3352      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.447         | 5.3248      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.565         | 3.3406      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 28.951         | 3.187       | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.206         | 3.5015      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.443         | 3.6491      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.72          | 3.8644      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 41.383         | 4.4287      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.469         | 3.639       | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.641         | 3.1803      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 41.505         | 4.4631      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 40.613         | 4.3675      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 51.177         | 5.4224      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.689         | 3.3769      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.028         | 3.2134      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 33.264         | 3.6242      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.33          | 3.6463      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.773         | 3.9088      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 41.342         | 4.4421      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 32.872         | 3.5919      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.168         | 3.128       | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.102         | 4.3208      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 40.172         | 4.3152      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 50.001         | 5.3066      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.839         | 3.3791      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.908         | 3.2949      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 32.612         | 3.5607      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.912         | 3.6889      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 35.898         | 3.8704      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.43          | 4.4351      | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 33.27          | 3.6343      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 28.679         | 3.1662      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.994         | 4.3974      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 40.411         | 4.3497      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.471         | 5.3558      | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 30.222         | 3.3237      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 28.63          | 3.1757      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 32.508         | 3.5508      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.21          | 3.63        | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.749         | 3.8603      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 42.141         | 4.5183      | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.43          | 3.6393      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.582         | 3.1597      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.614         | 4.3715      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 40.313         | 4.319       | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 51.074         | 5.4109      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.605         | 3.3908      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.312         | 3.2382      | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.923         | 3.5928      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.329         | 3.6618      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.894         | 3.897       | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 41.155         | 4.4245      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.937         | 3.7086      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 28.212         | 3.155       | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.294         | 4.3369      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 39.933         | 4.2976      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 49.929         | 5.2987      | 5     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+11      | 2107.38     | 30.424         | 3.3461      | 0     | tfog_abells_u|   13995064
+700     | 2107.38     | 29.538         | 3.2612      | 0     | tfog_abells_u|   13995064
+2       | 2107.38     | 33.067         | 3.6065      | 0     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.38     | 33.695         | 3.6676      | 0     | tfog_acoast_u|   12304975
+19      | 2300.38     | 36.08          | 3.9107      | 0     | tfog_acoast_u|   12304975
+15      | 2300.38     | 41.573         | 4.452       | 0     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+103     | 2107.3      | 32.777         | 3.5807      | 1     | tfog_abells_u|   13995064
+11      | 2107.3      | 27.899         | 3.0901      | 1     | tfog_abells_u|   13995064
+24      | 2107.3      | 40.633         | 4.3643      | 1     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+5       | 2300.29     | 39.969         | 4.2817      | 1     | tfog_acoast_u|   12304975
+155     | 2300.29     | 50.529         | 5.366       | 1     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+2       | 2108.74     | 29.965         | 3.3058      | 2     | tfog_abells_u|   13995064
+22      | 2108.74     | 28.97          | 3.2025      | 2     | tfog_abells_u|   13995064
+0       | 2108.74     | 33.041         | 3.6077      | 2     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2301.98     | 33.278         | 3.6292      | 2     | tfog_acoast_u|   12304975
+0       | 2301.98     | 35.925         | 3.9005      | 2     | tfog_acoast_u|   12304975
+1       | 2301.98     | 41.198         | 4.425       | 2     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+3       | 2110.48     | 33.629         | 3.6865      | 3     | tfog_abells_u|   13995064
+0       | 2110.48     | 28.48          | 3.1313      | 3     | tfog_abells_u|   13995064
+6       | 2110.48     | 40.88          | 4.3904      | 3     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2304.06     | 39.985         | 4.3028      | 3     | tfog_acoast_u|   12304975
+9       | 2304.06     | 49.967         | 5.3107      | 3     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+0       | 2112.28     | 30.339         | 3.3447      | 4     | tfog_abells_u|   13995064
+1       | 2112.28     | 29.643         | 3.254       | 4     | tfog_abells_u|   13995064
+0       | 2112.28     | 32.836         | 3.5766      | 4     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2306.18     | 33.034         | 3.6117      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 35.53          | 3.8616      | 4     | tfog_acoast_u|   12304975
+0       | 2306.18     | 40.621         | 4.3626      | 4     | tfog_acoast_u|   12304975
+? SET ROLE tfog_abells_u;
+1       | 2114.09     | 33.44          | 3.6458      | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 27.911         | 3.085       | 5     | tfog_abells_u|   13995064
+0       | 2114.09     | 40.879         | 4.3862      | 5     | tfog_abells_u|   13995064
+? SET ROLE postgres;
+? SET ROLE tfog_acoast_u;
+0       | 2308.33     | 39.898         | 4.2786      | 5     | tfog_acoast_u|   12304975
+0       | 2308.33     | 50.261         | 5.3169      | 5     | tfog_acoast_u|   12304975

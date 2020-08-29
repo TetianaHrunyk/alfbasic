@@ -38,7 +38,8 @@ def insert_rand_data_into_alf(n):
 
 
 if __name__ == "__main__":
-    conn = psycopg2.connect("dbname=alfbasic0 user=postgres password=password")
+#    conn = psycopg2.connect("dbname=alfbasic0 user=postgres password=password")
+    conn = psycopg2.connect("host=alf1.bsystems.cz port=5433 dbname=test user=test password=tetiana.hrunyk")
     
     stages = fetch_values("stages", "stage")
     tenants = fetch_values("tenants", "tenant")
@@ -48,6 +49,6 @@ if __name__ == "__main__":
     udim2 = fetch_values("udim2", "dname")
     udim3 = fetch_values("udim3", "dname")
     
-    insert_rand_data_into_alf(30000)
+    insert_rand_data_into_alf(90000)
     
     conn.close()

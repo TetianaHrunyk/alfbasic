@@ -52,14 +52,16 @@ CREATE TABLE acty (
 	acta VARCHAR(60) UNIQUE NOT NULL
 );
 
-COPY acty(acta) FROM '/home/tania/Code/alf/acty.csv' WITH (format csv);
+--COPY acty(acta) FROM '/home/tania/Code/alf/acty.csv' WITH (format csv);
+INSERT INTO acty(acta) VALUES ('toolboxes'),('bells'),('coast'),('programs'),('meaning'),('arrests'),('breast'),('frequency'),('cough'),('wells');
 
 CREATE TABLE tenants (
 	tenant_id SERIAL PRIMARY KEY,
 	tenant VARCHAR(100) NOT NULL UNIQUE
 );
 
-COPY tenants(tenant) FROM '/home/tania/Code/alf/tenants.csv' WITH (format csv);
+--COPY tenants(tenant) FROM '/home/tania/Code/alf/tenants.csv' WITH (format csv);
+INSERT INTO tenants(tenant) VALUES ('fog'),('drydock'),('sundays'),('enlistments'),('painting'),('surges'),('pedals'),('booms'),('tissues'),('vacuum');
 
 CREATE TABLE alfbasic (
 	CaseNumber SERIAL PRIMARY KEY,	
@@ -70,7 +72,7 @@ CREATE TABLE alfbasic (
 	udim1 VARCHAR(30) REFERENCES udim1(dname) ON DELETE CASCADE ON UPDATE CASCADE,
 	udim2 VARCHAR(30) REFERENCES udim2(dname) ON DELETE CASCADE ON UPDATE CASCADE,
 	udim3 VARCHAR(30) REFERENCES udim3(dname) ON DELETE CASCADE ON UPDATE CASCADE,
-	bstream BYTE ARRAY,
+	bstream BYTEA,
 	file_type VARCHAR(10),
 	svector tsvector,
 	attachment BOOLEAN default false,

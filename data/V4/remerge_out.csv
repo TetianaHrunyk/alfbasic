@@ -1,0 +1,98 @@
+rows    | tot_costs   | exec_time(ms)  | exec_time_cs| ncond | role        | av_data   
+----------------------------------------------------------------------------
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 77.868         | 8.9096      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 14.475         | 2.0854      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 14.065         | 2.0491      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 14.088         | 2.0736      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 14.754         | 2.1219      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 14.205         | 2.0507      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.61           | 1.6171      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.527          | 1.5711      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.408          | 1.5686      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.252          | 1.5555      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.609          | 1.5964      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.225          | 1.5452      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.344          | 1.5567      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.256          | 1.5709      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.635          | 1.5991      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.197          | 1.5444      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.497          | 1.6117      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.227          | 1.5489      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.676          | 1.5844      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.657          | 1.6019      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.536          | 1.5762      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.307          | 1.5591      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.591          | 1.5754      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.211          | 1.5527      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.492          | 1.5893      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.356          | 1.5464      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.411          | 1.5763      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.262          | 1.5527      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.443          | 1.5815      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.353          | 1.5632      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.474          | 1.5695      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.51           | 1.5786      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.492          | 1.5808      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.429          | 1.5815      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.484          | 1.5847      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.466          | 1.5872      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.245          | 1.5509      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.359          | 1.5738      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.488          | 1.5842      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.339          | 1.5584      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.321          | 1.5579      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.385          | 1.5681      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.367          | 1.5668      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.388          | 1.5816      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.4            | 1.5714      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.361          | 1.5628      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.352          | 1.581       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.308          | 1.5665      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 10.195         | 1.7255      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 10.089         | 1.671       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.388          | 1.5722      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.582          | 1.5971      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.513          | 1.5864      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.481          | 1.5787      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.504          | 1.579       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.199          | 1.5422      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.348          | 1.5858      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.449          | 1.5575      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.498          | 1.5913      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.482          | 1.5862      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.476          | 1.5796      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.458          | 1.585       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.568          | 1.5933      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.524          | 1.5888      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.484          | 1.5751      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.558          | 1.6102      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.495          | 1.5817      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.679          | 1.5986      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.503          | 1.5879      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.401          | 1.593       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.404          | 1.5776      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.657          | 1.6004      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.375          | 1.5609      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.57           | 1.6153      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.241          | 1.5451      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.686          | 1.6247      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.578          | 1.5876      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+? SET ROLE tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral;
+0       | 1927.87     | 9.587          | 1.6116      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.502          | 1.5946      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.682          | 1.6135      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.569          | 1.6014      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.497          | 1.5941      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.648          | 1.5935      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.597          | 1.6089      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+3       | 1927.87     | 9.647          | 1.608       | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.543          | 1.5992      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.487          | 1.58        | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
+0       | 1927.87     | 9.797          | 1.6627      | 0     | tfog_acoast_cbudget_sdraft_u1public_u2table_u3neutral|      35328
