@@ -1,5 +1,8 @@
 rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | ncond | nind  | stmt
 ----------------------------------------------------------------------------
+?Data: 53230521
+?Lines: 334
+
 6       | 2295.92     | 102.776        | 114.3517    | 3.15        | 0     | 4     | SELECT CaseNumber FROM alfbasic intersect  select find_text('diaddvur');
 169     | 2295.92     | 27.311         | 30.5042     | 1.665       | 0     | 4     | SELECT CaseNumber FROM alfbasic intersect  select find_text('12');
 0       | 2295.92     | 29.811         | 32.7287     | 1.412       | 0     | 4     | SELECT CaseNumber FROM alfbasic intersect  select find_text('January 2014');

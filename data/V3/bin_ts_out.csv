@@ -105,3 +105,59 @@ rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | fsize | rol
 0       | 0.52        | 19.332         | 35.6591     | 0.056       | 293376| tfog_acoast_cstatistics_stask_u
 0       | 0.52        | 9.626          | 34.3359     | 0.057       | 435200| tfog_acoast_cstatistics_stask_u
 0       | 0.52        | 17.85          | 20.8642     | 0.054       | 37807 | tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 174.424        | 236.9039    | 0.06        | 35328 | tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 138.571        | 146.3189    | 0.053       | 96325 | tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 143.165        | 147.7187    | 0.06        | 53248 | tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 138.556        | 149.9107    | 0.054       | 157457| tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 137.801        | 161.9916    | 0.055       | 293376| tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 139.769        | 172.8728    | 0.056       | 435200| tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 138.208        | 143.7061    | 0.063       | 37807 | tfog_abells_cbudget_sdraft_u
+
+0       | 0.52        | 7.86           | 10.684      | 0.052       | 35328 | tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.635          | 6.779       | 0.05        | 96325 | tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.557          | 4.1702      | 0.052       | 53248 | tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.653          | 11.2472     | 0.054       | 157457| tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.581          | 22.027      | 0.054       | 293376| tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.62           | 29.7823     | 0.058       | 435200| tfog_acoast_cbudget_sdraft_u
+
+0       | 0.52        | 0.577          | 3.4606      | 0.05        | 37807 | tfog_acoast_cbudget_sdraft_u
+
+14      | 0.52        | 2758.039       | 2761.7931   | 0.058       | 35328 | tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 163.385        | 171.8161    | 0.058       | 96325 | tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 159.624        | 163.5971    | 0.053       | 53248 | tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 160.774        | 171.5877    | 0.056       | 157457| tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 162.27         | 181.4961    | 0.055       | 293376| tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 160.642        | 192.7433    | 0.056       | 435200| tfog_acoast_cstatistics_stask_u
+0       | 0.52        | 174.455        | 178.0012    | 0.054       | 37807 | tfog_acoast_cstatistics_stask_u
+480     | 0.52        | 41938.319      | 41959.785   | 0.069       | 35328 | tfog_abells_u
+
+0       | 0.52        | 3297.989       | 3305.0325   | 0.054       | 96325 | tfog_abells_u
+
+0       | 0.52        | 3307.612       | 3311.352    | 0.052       | 53248 | tfog_abells_u
+
+0       | 0.52        | 3290.409       | 3301.796    | 0.056       | 157457| tfog_abells_u
+
+0       | 0.52        | 3408.712       | 3428.6177   | 0.055       | 293376| tfog_abells_u
+
+0       | 0.52        | 3302.622       | 3332.8807   | 0.057       | 435200| tfog_abells_u
+
+0       | 0.52        | 3330.997       | 3334.6732   | 0.058       | 37807 | tfog_abells_u
+
+689     | 0.52        | 74075.923      | 74078.6161  | 0.054       | 35328 | tfog_acoast_u
+0       | 0.52        | 3920.186       | 3926.651    | 0.051       | 96325 | tfog_acoast_u
+0       | 0.52        | 3937.105       | 3940.7606   | 0.053       | 53248 | tfog_acoast_u
+0       | 0.52        | 3935.652       | 3945.7955   | 0.054       | 157457| tfog_acoast_u
+0       | 0.52        | 4430.284       | 4448.9145   | 0.058       | 293376| tfog_acoast_u
+0       | 0.52        | 4131.599       | 4161.6876   | 0.057       | 435200| tfog_acoast_u
+0       | 0.52        | 3948.863       | 3952.0128   | 0.054       | 37807 | tfog_acoast_u

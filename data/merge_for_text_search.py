@@ -32,18 +32,19 @@ def merge(mod):
     counter = 0
     queries = q.readlines()
     for c in cond:
-        if counter > 1500:
-            break
         if c[0] == "?" or len(c) < 3:
-            out.write(c)
+            if "index" not in c:
+                out.write(c)
             continue
         for query in queries:
             if query[0]=='?':     
                 continue
             if len(query) > 3:
                 if counter % mod == 0:
-                    line = c[:-2] + ' and CaseNumber%10=0 intersect ' + query[30:]
+                    line = c[:-2] + ' intersect ' + query[30:]
                     line = line.replace('*', "CaseNumber")
+                    if 'alfbasic and' in line:
+                        line = line.replace('alfbasic and', "alfbasic where ")
                     out.write(line)
                 counter += 1
     out.close()
@@ -53,7 +54,7 @@ def merge(mod):
             
             
 if __name__ == "__main__":
-    merge(6)
+    merge(1)
     
     
     

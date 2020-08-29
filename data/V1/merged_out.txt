@@ -1,5 +1,8 @@
 rows    | tot_costs   | exec_time(ms)  | exec_time_cs| plan_time   | ncond | nind  | stmt
 ----------------------------------------------------------------------------
+? available data 51526343+55151210=106677553
+? lines: 456
+
 ? SET ROLE tfog_abells_u;
 6       | 2295.92     | 97.626         | 110.0037    | 4.049       | 0     | 4     | SELECT CaseNumber FROM alfbasic intersect  select find_text('diaddvur');
 169     | 2295.92     | 25.972         | 28.9624     | 1.349       | 0     | 4     | SELECT CaseNumber FROM alfbasic intersect  select find_text('12');

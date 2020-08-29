@@ -273,7 +273,8 @@ CREATE TABLE attachments (
 	meta2 VARCHAR(30) default 'file_creator',
 	meta3 VARCHAR(30) default 'last_modified_by'
 );
-GRANT SELECT ON TABLE attachments TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
+GRANT SELECT, INSERT, UPDATE ON TABLE attachments TO fog_tenant_group, bells_acta_group, coast_acta_group, budget_ctype_group, statistics_ctype_group, draft_stage_group, task_stage_group, udim1_public_group, udim2_table_group, udim3_neutral_group;
+
 --PostgreSQL documentation on working with large files: https://www.postgresql.org/docs/10/lo-interfaces.html
 
 

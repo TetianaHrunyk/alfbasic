@@ -62,7 +62,7 @@ def run_stmts():
             
             
 #            out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {}\n".format(after-before, json["Plan"]["Total Cost"], json["Plan"]["Actual Total Time"], round((end-start)*1000, 4), json["Planning Time"], len(arr), role))
-#            out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {}\n".format(after-before, round((json["Plan"]["Total Cost"]+json1["Plan"]["Total Cost"]), 4), round((json["Plan"]["Actual Total Time"]+json1["Plan"]["Actual Total Time"]), 4), round((end-start)*1000, 4), round((json["Planning Time"]+json1["Planning Time"]), 4), len(arr), role))
+            out_file.write("{:<8}| {:<12}| {:<15}| {:<12}| {:<12}| {:<6}| {}\n".format(after-before, round((json["Plan"]["Total Cost"]+json1["Plan"]["Total Cost"]), 4), round((json["Plan"]["Actual Total Time"]+json1["Plan"]["Actual Total Time"]), 4), round((end-start)*1000, 4), round((json["Planning Time"]+json1["Planning Time"]), 4), len(arr), role))
 #            conn.rollback()
             conn.commit()
     
